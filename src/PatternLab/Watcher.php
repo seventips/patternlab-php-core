@@ -319,9 +319,13 @@ class Watcher extends Builder {
 		Data::clear();
 		PatternData::clear();
 		Annotations::clear();
-		
-		$g = new Generator();
-		$g->generate($options);
+
+		try {
+			$g = new Generator();
+			$g->generate($options);
+		} catch (\Exception $ex) {
+			echo $ex->getMessage().PHP_EOL;
+		}
 		
 	}
 	
