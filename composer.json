@@ -52,6 +52,6 @@
     "symfony/yaml": "^3.0"
   },
   "replace": {
-	"pattern-lab/core": "^2.0.0"
+	"pattern-lab/core": "^2.0"
   }
 }
